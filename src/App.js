@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import { Form } from './components/Form';
+import { FormType2 } from './components/FormType2';
+import UseState from './components/UseState';
 
 function App() {
+  const [state, updateState] = useState('red');
+  console.log("app")
   return (
     <div className="App">
-      <header className="App-header">
+    <FormType2/>
+    <Form></Form>
+      {/* <button onClick={() => updateState('black')}> test useMemo </button>
+      <label>{state}</label> */}
+
+      {/* <Home/>
+       */}
+       {/* <UseState name={state}/>
+        */}
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </header> */}
     </div>
   );
 }

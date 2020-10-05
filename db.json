@@ -1,0 +1,19 @@
+{
+  "API-users": [
+    {
+      "id": 10,
+      "name": "Sebastian",
+      "age": 34
+    },
+    {
+      "id": 12,
+      "name": "Steve",
+      "age": 22
+    },
+    {
+      "id": 33,
+      "name": "Ann",
+      "age": 12
+    }
+  ]
+}
